@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>バーニッシュおじいちゃんを回せるページ</h1>
+  <div class="ororo">オロロロロロロロ...</div>
+  <div class="toxuru">トゥルルルルルルルルルルルルルルルr...</div>
+  <img src="./images/burnish_GG.png" class="GG"/>
+  <div class="button_warapper">
+    <button type="button" name="button"></button>
+  </div>
+  <script type="text/javascript">
+    $("button").click(function () {
+      $(".GG").toggleClass("spin");
+      $("button").toggleClass("stop");
+      $(".ororo").toggleClass("sakebi");
+      $(".toxuru").toggleClass("sakebi");
+    })
+  </script>
+</body>
+</html>
