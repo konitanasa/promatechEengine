@@ -6,8 +6,8 @@
 </head>
 <body>
   <h1>バーニッシュおじいちゃんを回せるページ</h1>
-  <div class="ororo">オロロロロロロロ...</div>
-  <div class="toxuru">トゥルルルルルルルルルルルルルルルr...</div>
+  <div class="oro">オロロロロロロロ...</div>
+  <div class="toxu">トゥルルルルルルルルルルルルルルルr...</div>
   <img src="./images/burnish_GG.png" class="GG"/>
   <div class="button_warapper">
     <button type="button" name="button"></button>
@@ -15,9 +15,10 @@
   <script type="text/javascript">
     $("button").click(function () {
       $(".GG").toggleClass("spin");
+      $("body").toggleClass("power");
       $("button").toggleClass("stop");
-      $(".ororo").toggleClass("sakebi");
-      $(".toxuru").toggleClass("sakebi");
+      $(".oro").toggleClass("roro");
+      $(".toxu").toggleClass("ruru");
     })
   </script>
 </body>
