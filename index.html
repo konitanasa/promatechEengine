@@ -14,7 +14,11 @@
   </div>
   <script type="text/javascript">
     $("button").click(function () {
-      $(".GG").toggleClass("spin");
+      if ($(".GG").hasClass("spin")) {
+        $(".GG").on("animationiteration", function () { $(this).removeClass("spin").off(); });
+      } else {
+        $(".GG").addClass("spin");
+      }
       $("body").toggleClass("power");
       $("button").toggleClass("stop");
       $(".oro").toggleClass("roro");
